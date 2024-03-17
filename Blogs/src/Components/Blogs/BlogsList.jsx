@@ -41,15 +41,15 @@ const BlogsList = () => {
     console.log('Selected', id)
   }
   
-  let uniqueArray = [...new Set(blogs)];
+  let uniqueArray = [...new Set(blogs)]; // for removing duplicate Ids
   return (
     <>
     {
       isLoading ? <BlogsTypography textalign={'center'} sx={{marginTop:'25%'}}>Loading...</BlogsTypography> :
-     <Grid container rowSpacing={8}>
+     <Grid container mt={3} spacing={3}>
     {
       uniqueArray?.map((item) => 
-        <Grid key={item.id} item sm={12} md={4} lg={3} >
+        <Grid key={item.id} item sm={12} md={4} lg={4} >
         <SingleBlog blogs={item} />
         </Grid>
         )

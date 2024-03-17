@@ -41,9 +41,6 @@ export default function SingleBlog({ blogs }) {
                     <BlogsTypography color={theme.palette.primary.text} weight={600} size={'16px'} >
                         Posted on October 6th 2021
                     </BlogsTypography>
-                    <BlogsTypography color={'blue'}>
-                        {blogs?.id}
-                    </BlogsTypography>
                     <BlogsTypography color={theme.palette.primary.heading} lineheight={'48px'}>
                         {blogs?.Title}
                     </BlogsTypography>
